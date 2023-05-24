@@ -46,4 +46,7 @@ $(".saveBtn").on("click", function () {
   console.log(text, time);
 });
 
-
+// clear local storage button
+$("#clearStorageBtn").on("click", function () {
+  localStorage.clear();
+});
