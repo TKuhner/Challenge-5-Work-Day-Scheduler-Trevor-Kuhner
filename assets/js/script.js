@@ -31,7 +31,14 @@
 var today = dayjs();
 var saveBtn = document.querySelector(".saveBtn");
 
+window.onload = function () {
+  for (var i = 0; i < localStorage.length; i++) {
+    var pulledData = localStorage.key(i);
+    $("#" + pulledData).children(".description").val(localStorage.getItem(pulledData));
+  };
+}
 
+// display current date and time
 $('#currentDay').text(today.format('MMM D, YYYY, h:mm:ss a'));
 
 
