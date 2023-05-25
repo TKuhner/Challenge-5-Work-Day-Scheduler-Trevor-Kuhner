@@ -26,16 +26,33 @@
 // TODO: Add code to display the current date in the header of the page.
 
 
-
-
 var today = dayjs();
 var saveBtn = document.querySelector(".saveBtn");
+var hoursEl = document.querySelectorAll(".time-block");
+
 
 window.onload = function () {
   for (var i = 0; i < localStorage.length; i++) {
     var pulledData = localStorage.key(i);
     $("#" + pulledData).children(".description").val(localStorage.getItem(pulledData));
   };
+
+  for (var i = 0; i < hoursEl.length; i++) {
+    var hourId = $(hoursEl[i]).attr("id");
+    hourId = hourId.split("-")[1];
+
+    if (today.hour() > hourId) {
+      $(hoursEl[i]).children(".description").addClass("past");
+    } else if (today.hour() == hourId) {
+      $(hoursEl[i]).children(".description").addClass("present");
+    } else if (today.hour() < hourId) {
+      $(hoursEl[i]).children(".description").addClass("future");
+    }
+
+    console.log("hourId is " + hourId);
+    console.log("current hour is " + today.hour());
+    console.log(today.hour() + 1);
+  }
 }
 
 // display current date and time

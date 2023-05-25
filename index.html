@@ -10,7 +10,8 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
   <title>Work Day Scheduler</title>
 </head>
@@ -33,7 +34,7 @@
         -->
 
     <!-- Example of a past time block. The "past" class adds a gray background color. -->
-    
+
 
     <div id="hour-9" class="row time-block past">
       <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
@@ -109,11 +110,47 @@
       </button>
     </div>
 
+    <div id="hour-18" class="row time-block future">
+      <div class="col-2 col-md-1 hour text-center py-3">6PM</div>
+      <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="hour-19" class="row time-block future">
+      <div class="col-2 col-md-1 hour text-center py-3">7PM</div>
+      <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="hour-20" class="row time-block future">
+      <div class="col-2 col-md-1 hour text-center py-3">8PM</div>
+      <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="hour-21" class="row time-block future">
+      <div class="col-2 col-md-1 hour text-center py-3">9PM</div>
+      <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="hour-22" class="row time-block future">
+      <div class="col-2 col-md-1 hour text-center py-3">10PM</div>
+      <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+    </div>
+
     <br>
     <div class="justify-content-center d-flex">
       <button id="clearStorageBtn" class="btn btn-primary btn-danger" type="submit">Clear Storage</button>
     </div>
-    
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
