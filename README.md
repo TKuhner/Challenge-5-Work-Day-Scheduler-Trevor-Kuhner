@@ -4,7 +4,7 @@ This repository is for challenge 5 of the the Northwestern University coding boo
 
 https://tkuhner.github.io/Challenge-5-Work-Day-Scheduler-Trevor-Kuhner/
 
-![image](https://github.com/TKuhner/Challenge-5-Work-Day-Scheduler-Trevor-Kuhner/assets/71107536/3741290a-8914-4d81-8793-de028e25e81b)
+![image](https://github.com/TKuhner/Challenge-5-Work-Day-Scheduler-Trevor-Kuhner/assets/71107536/e447b051-f8ec-432c-8ac2-77e1adeb5f1a)
 
 
 The Work Day Scheduler is a web application that allows users to plan and organize their work day by providing a time-block interface for each hour. Users can enter their tasks or appointments in the corresponding time blocks and save them for future reference. The interface also dynamically updates the color of each time block to indicate whether it is in the past, present, or future based on the current time.
